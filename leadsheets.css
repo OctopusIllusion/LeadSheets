@@ -1,0 +1,99 @@
+
+header {
+    height: 4.66cm; 
+    width:400px;
+    margin:0px auto;
+}
+
+caption {
+  font-weight: bold;
+}
+
+li {
+  padding:3px;
+}
+
+.chords_table {
+  padding:0.5cm;
+}
+
+
+.chords_border_test {
+  border-style:solid;
+  border-width:thin;
+  border-color:black;
+}
+
+h3, h2 {
+    color: red;
+}
+
+.titleText {
+  text-align: center; 
+  color: green;
+  font-size: 74px;
+  font-family: times-new-roman;
+}
+
+.localLinks {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.8cm;
+}
+
+.measure {
+  padding:0.5cm;
+}
+
+.chords_border {
+  background: white; 
+  border-radius: 5px;
+}
+
+td.template_table {
+  background: white; 
+  border-radius: 5px;
+}
+
+.one_beat {
+  padding: 0.5cm;
+}
+
+.song_title {
+  padding: 0.25cm;
+  font-size: 36px;
+}
+
+body {
+  background-image: url(xpiano_keys.png); 
+  background-repeat: repeat-x;
+  background-color: powderblue;
+}
+
+button {
+  height: 35px;
+  background-color: darkseagreen;
+  color: white; 
+  border-style: solid; 
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: none;
+  border-radius: 5px; 
+}
+
+.butt_txt {
+  color: white; 
+}
+
+html *
+{
+  font-family: Arial, Helvetica, sans-serif; !important;
+}
+
+table {
+  border-spacing: 15px;
+}
+
+.s_structure {
+  font-weight: bold;
+}

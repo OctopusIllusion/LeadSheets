@@ -1,0 +1,51 @@
+
+
+Leadsheets Project Guide
+
+
+$ Main Pages
+
+leadsheets_home.php
+
+leadsheets_create.html
+
+leadsheets_edit.php
+
+
+$ Resources
+
+leadsheets.js
+
+leadsheets.css
+
+
+$ Ajax Scripts
+
+leadsheets_submit.php
+
+display_section.php
+
+lookup_key.php
+
+set_section.php
+
+commit_chords.php
+
+chord_template.php
+
+retrieve_song.php
+
+lookup_chords.php
+
+
+$ PHP Resources
+
+php_functions.php
+
+
+$ SQL Commands
+
+mysql> CREATE TABLE chords_table(c_id SMALLINT UNSIGNED AUTO_INCREMENT, song_id SMALLINT(5) unsigned, section CHAR(1), chord_string VARCHAR(255), PRIMARY KEY(c_id), FOREIGN KEY(song_id) REFERENCES song_table(id));
+
+mysql> CREATE TABLE song_table(id SMALLINT UNSIGNED AUTO_INCREMENT, title VARCHAR(255) NOT NULL, is_major TINYINT NOT NULL, base_key CHAR(1) NOT NULL, sections TINYINT NOT NULL, structure VARCHAR(255), PRIMARY KEY(id));              
+

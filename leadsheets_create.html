@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>LeadSheets</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="leadsheets.js"></script>
+  <link rel="stylesheet" type="text/css" href="leadsheets.css">
+</head>
+<body>
+  <header>
+  <div class="titleText">LeadSheets</div>
+  <br>
+  <div class="localLinks"><a href="leadsheets_home.php">View Chords</a> &nbsp; &nbsp;
+  <a href="leadsheets_create.html">Create Song</a></div>
+  </header>
+
+  <br>
+  <fieldset>
+  <legend>Create a Song</legend>
+  <p>Create a new song in our Database by filling out all the forms and clicking 'Submit'</p>
+ 
+  <form name="song_specs" action="/leadsheets_upload.php" onsubmit="return validateForm()" method="post">
+  <ol>
+    <li>Song Title:<input type="text" name="songtitle" id="full_name"></li>
+    <li>Key<select name="songkey" id="music_key">
+        <option value="A">A</option>
+        <option value="H">Bb</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="I">C#</option>
+        <option value="D">D</option>
+        <option value="J">Eb</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="K">F#</option>
+        <option value="G" selected>G</option>
+        <option value="L">Ab</option>
+      </select>
+    </li>
+
+    <li>Major<input type="radio" name="chordtype" value="major">Minor<input type="radio" name="chordtype" value="minor"> </li>
+
+    <li>Number of Sections (A,B)<select id="song_sections" name="songsections">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option> 
+    </select></li>
+
+  </ol> 
+  </form>
+
+  <button class="buttons" onclick="get_and_post()"><div class="button_text">Next &gt;</div></button> 
+  </fieldset>
+
+<div id="song_staging"></div>
+
+</body>
+</html> 
